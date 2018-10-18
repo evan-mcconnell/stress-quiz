@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <script src="js/jquery-3.3.1.js" charset="utf-8"></script>
+    <script src="js/scripts.js" charset="utf-8"></script>
+    <title></title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h2>Stress Survey</h2>
+      </div>
+
+      <!-- form one -->
+      <form id="stressSurvey">
+        <div class="form-group">
+          <p>Check all that applies:</p>
+          <input type="checkbox" name="stressSign" value="#">Loss of sleep<br>
+          <input type="checkbox" name="stressSign" value="#">Feeling overwhelmed<br>
+          <input type="checkbox" name="stressSign" value="#">Feeling tired<br>
+          <input type="checkbox" name="stressSign" value="#">Change of mood<br>
+          <input type="checkbox" name="stressSign" value="#">Sweating<br>
+        </div>
+        <!-- end of form one -->
+
+        <!-- form two -->
+          <div class="form-group">
+            <p>Check all that applies:</p>
+            <input type="checkbox" name="healthSign" value="#">Headache<br>
+            <input type="checkbox" name="healthSign" value="#">High blood pressure<br>
+            <input type="checkbox" name="healthSign" value="#">Anxiety<br>
+            <input type="checkbox" name="healthSign" value="#">Panic attacks<br>
+            <input type="checkbox" name="healthSign" value="#">Heart palpatations<br>
+          </div>
+          <!-- end of form two -->
+
+          <!-- form three -->
+            <div class="form-group">
+              <p>Check all that applies:</p>
+              <input type="checkbox" name="copeMethod" value="bike">Meditate<br>
+              <input type="checkbox" name="copeMethod" value="car">Manage your time<br>
+              <input type="checkbox" name="copeMethod" value="carpool">Petting a kitten or puppy<br>
+              <input type="checkbox" name="copeMethod" value="walk">Taking a walk with a dog<br>
+              <input type="checkbox" name="copeMethod" value="bus">Yoga<br>
+            </div>
+            <!-- end of form three -->
+
+       <button type="submit">Submit Survey</button>
+      </form>
+      <span id="answerBox">
+        <p>Your results are:
+          <b>
+            <span id="answer"></span>
+          </b>
+        </p>
+      </span>
+    </div>
+  </body>
+</html>

@@ -10,14 +10,14 @@ function totalSign(num1, num2){
 
 function getCope(cope, stress) {
   if (cope > 3) {
-    console.log("You are coping!");
+    $("#answer").text("You are coping!");
   } else {
     if (stress > 5) {
-      console.log("Get some help please");
+      $("#answer").text("Get some help please");
     } else if (stress > 2) {
-      console.log("You're doing alright");
+      $("#answer").text("You're doing alright");
     } else {
-      console.log("You're doing great!");
+      $("#answer").text("You're doing great!");
     };
   };
 };
@@ -29,9 +29,11 @@ function getCope(cope, stress) {
 $(document).ready(function(){
   $("form#stressSurvey").submit(function(event){
     event.preventDefault();
+
     totalStress = 0;
     stressSignInput = 0;
     healthSignInput = 0;
+    copeMethodInput = 0;
 
     $("input:checkbox[name=stressSign]:checked").each(function(){
       stressSignInput += 1;
@@ -57,7 +59,7 @@ $(document).ready(function(){
     // });
     //
     // $('form#stressSurvey').fadeOut();
-    // $("#answerBox").fadeIn();
-console.log(totalStress);
+    $("#answerBox").fadeIn();
+// console.log(totalStress);
   });
 });
